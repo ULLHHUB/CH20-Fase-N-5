@@ -9,6 +9,10 @@
     <name>ch20-tdd</name>
     <url>http://maven.apache.org</url>
 
+    <properties>
+        <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -40,6 +44,11 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <formats>
+                                <format>XML</format>
+                            </formats>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
