@@ -10,6 +10,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
+        <sonar.organization>ullhhub</sonar.organization>
         <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
